@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-2">Your pet details:</h1>
+		<div class="row">
+		<img src="" class="img-fluid col-md-6" alt="Responsive image">
+			<div class="col-md-6 pet_details">
+				<div class="pet_details_rain" style="display:none;">
+				<h2>Yup!</h2>
+				<p>It looks like <span class="pet_name" style="color:red;"></span> is going to need one in <span class="pet_location" style="color:red"></span>.</p>
+				</div>
+				<div class="pet_details_sunny" style="display:none;">
+				<h2>Noooo!</h2>
+				<p><span class="pet_name" style="color:red;"></span> is not going to need one in <span class="pet_location" style="color:red"></span>.</p>
+				</div>
+				<a href="/" class="alert-link">Lookup a different pet</a>
+			</div>
+		</div>
+		<footer>
+		<p class="small" style="color:grey">Weather service is <a href="https://darksky.net/forecast/21.3045,-157.8557/us12/en">Powered by Dark Sky</a></p>
+		</footer>
+	</div>
+
+	<script src="/js/regular_detail.js"></script>
+</body>
+</html>
